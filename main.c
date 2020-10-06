@@ -5,22 +5,16 @@
 
 int main(int argc, char *argv[]) {
 	
-	int num;
-	char c;
-	num==0;
+	int sum=0;
+	int i,n;
 	
-	printf("input a string : ");
+	printf("input a number : ");
+	scanf("%i", &n);
 	
-	while((c= getchar()) != '\n') // getchar 가 scanf역할을 함. c가 \n이랑 같은가? 
-	{
-		if(c>='0' && c<='9')
-		{
-			num++; 
-		}
+	for (i=0; i<=n ; i++)
+		sum += i; // summation
 		
-	}
-	
-	printf("the number of digits is %i\n" , num);
+	printf("the summation is %i\n", sum);
 	
 	return 0;
 }
