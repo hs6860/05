@@ -7,15 +7,13 @@ int main(int argc, char *argv[]) {
 	
 	int a;
 	
-	printf("input an integer : ");
+	printf("input a integer : ");
 	scanf("%i",&a);
 	
-	if(a>0)
-		printf("양수입니다. \n");
-	else if(a<0)
-		printf("음수입니다. \n");
-	else
-		printf("0입니다. \n"); 
-		
+	if(a<0)
+		a= a*(-1);
+
+	printf("절대값은 %i \n", a);
+	
 	return 0;
 }
