@@ -5,15 +5,22 @@
 
 int main(int argc, char *argv[]) {
 	
-	int a;
+	int num;
+	char c;
+	num==0;
 	
-	printf("input a integer : ");
-	scanf("%i",&a);
+	printf("input a string : ");
 	
-	if(a<0)
-		a= a*(-1);
-
-	printf("절대값은 %i \n", a);
+	while((c= getchar()) != '\n') // getchar 가 scanf역할을 함. c가 \n이랑 같은가? 
+	{
+		if(c>='0' && c<='9')
+		{
+			num++; 
+		}
+		
+	}
+	
+	printf("the number of digits is %i\n" , num);
 	
 	return 0;
 }
